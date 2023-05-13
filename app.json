@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Connected",
+    "slug": "Connected",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Connected"
+}
