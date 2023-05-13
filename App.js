@@ -5,7 +5,12 @@ import Rating from './src/screens/rating';
 
 export default function App() {
   return (
-    <Description/>
+    <div>
+      <Resource />
+      <Description/>
+    
+    </div>
+   
   );
 }
 
