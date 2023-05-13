@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Dimensions, Button, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+
+const SCREENHEIGHT = Dimensions.get('window').height;
+const SCREENWIDTH  = Dimensions.get('window').width;
+
 
 function Rating() {
     const [value, setValue] = useState(1);
@@ -9,6 +13,14 @@ function Rating() {
     };
   
     return (
+      <View style={styles.masterContainer}>
+        <View style={styles.headerContainer}>
+
+            <View style={styles.header}>
+            <Text style={styles.title}>CONNECTED</Text>
+        </View>
+      </View>
+
       <View style={styles.container}>
         <Text style={styles.label}>{'Just before we connect you with a mentor, please indicate the severity of the distress you are currently experiencing. \n\nChoose a value from 1 to 5:'}</Text>
         <View style={styles.buttonGroup}>
@@ -59,18 +71,47 @@ function Rating() {
           </View>
         </View>
         <Text style={styles.value}>{`Current value: ${value}`}</Text>
+
+        <View>
+        <Button title="Submit" 
+                // style={{ backgroundColor: '#FF9900', color:'#6D83A9', borderRadius:'15',backgroundColor:'#EDE5EC'}} 
+                color='#6D83A9'
+                backgroundColor='#EDE5EC'
+                onPress={() => {
+          alert('Goes to Chat Page!');
+        }}
+        />
+      </View>
+
+      </View>
       </View>
     );
   }
   
   const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center',
+
+    masterContainer: {
+        flex:1,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
+
+    container: {
+        flex:1,
+        padding:40,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
+    headerContainer: {
+        height:120,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
     label: {
       fontSize: 20,
+      color: '#6D83A9',
       marginBottom: 10,
       marginHorizontal: 10,
     },
@@ -79,20 +120,21 @@ function Rating() {
       alignItems: 'flex-start',
       justifyContent: 'center',
       marginBottom: 10,
-      marginLeft: 30
+      marginLeft: 30,
     },
     buttonContainer: {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'flex-start',
       marginHorizontal: 10,
-      marginVertical: 5,
+      marginVertical: 5
     },
     button: {
       backgroundColor: '#EEE',
       paddingHorizontal: 20,
       paddingVertical: 10,
       borderRadius: 10,
+      borderRadius: 50,
     },
     activeButton: {
       backgroundColor: '#AAA',
@@ -100,16 +142,35 @@ function Rating() {
     buttonText: {
       fontSize: 18,
       fontWeight: 'bold',
+      color: '#6D83A9',
     },
     buttonLabel: {
       fontSize: 16,
     //   marginLeft: 10,
       marginHorizontal: 30,
+      color: '#6D83A9',
     },
     value: {
       fontSize: 20,
       marginVertical: 10,
+      color: '#6D83A9',
     },
+
+    header: {
+        backgroundColor: '#EDE5EC',
+        height: 10,
+        width: SCREENWIDTH,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 0,
+        flex: 2,
+      },
+      title: {
+        marginTop: 50,
+        fontSize: 25,
+        color: '#6D83A9',
+        fontWeight: 'bold',
+      },
   });
   
 
