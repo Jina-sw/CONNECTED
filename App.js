@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Description from './src/screens/Description';
 
 export default function App() {
   return (
-    <Providers/>
+    <Description/>
   );
 }
 
