@@ -8,13 +8,18 @@ import {
     TextInput
   } from 'react-native';
   import React from 'react';
-
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH  = Dimensions.get('window').width;
+
 
 export default function Description(props) {
     return (
       <View style={styles.container}>
+
+      <View style={styles.header}>
+        <Text style={styles.title}>CONNECTED</Text>
+      </View>
+
         {/* <View
         screenOptions={{
           headerStyle: {
@@ -131,6 +136,22 @@ const styles = StyleSheet.create({
     textAlign: 'center', 
     textAlignVertical: 'center',
     fontSize: 15,
+  },
+
+  header: {
+    backgroundColor: '#EDE5EC',
+    height: 60,
+    width: SCREENWIDTH,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 0,
+    flex: 1,
+  },
+  title: {
+    marginTop: 50,
+    fontSize: 25,
+    color: '#6D83A9',
+    fontWeight: 'bold',
   },
 
 })
