@@ -6,9 +6,7 @@ import Rating from './src/screens/rating';
 export default function App() {
   return (
     <div>
-      <Resource />
-      <Description/>
-    
+      <Description/> 
     </div>
    
   );
