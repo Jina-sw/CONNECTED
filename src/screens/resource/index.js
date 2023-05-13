@@ -8,11 +8,15 @@ import {
     TextInput
   } from 'react-native';
 import React from 'react';
+
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH  = Dimensions.get('window').width;
 
 
+
 export default function Resource(props) {
+
+
     return (
     <View style={styles.container}>
 
