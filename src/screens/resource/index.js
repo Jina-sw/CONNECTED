@@ -73,7 +73,7 @@ export default function Resource(props) {
                     // style={{ backgroundColor: '#FF9900', color:'#6D83A9', borderRadius:'15',backgroundColor:'#EDE5EC'}} 
                     color='#6D83A9'
                     backgroundColor='#EDE5EC'
-                    // onPress={() => {props.navigation.navigate('Rating');}}
+                    onPress={() => {props.navigation.navigate('rating');}}
             />
         </View>
     </View>

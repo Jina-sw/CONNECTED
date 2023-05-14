@@ -78,7 +78,7 @@ export default function Description(props) {
                 color='#6D83A9'
                 backgroundColor='#EDE5EC'
                 onPress={() => {
-          // props.navigation.navigate('Resource');
+           props.navigation.navigate('Resource');
         }}
         />
       </View>
