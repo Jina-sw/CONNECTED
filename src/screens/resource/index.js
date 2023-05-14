@@ -5,9 +5,14 @@ import {
     StyleSheet,
     Image,
     Button,
-    TextInput
-  } from 'react-native';
-import React from 'react';
+    TextInput,
+    TouchableOpacity,
+
+    
+} from 'react-native';
+import React, { useState } from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import Rating from '../rating/index';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH  = Dimensions.get('window').width;
@@ -15,7 +20,11 @@ const SCREENWIDTH  = Dimensions.get('window').width;
 
 
 export default function Resource(props) {
+    const [isChecked, setIsChecked] = useState(false);
 
+    const handleCheckboxPress = () => {
+        setIsChecked(!isChecked);
+    }
 
     return (
     <View style={styles.container}>
@@ -38,18 +47,21 @@ export default function Resource(props) {
         <View>
             <View>
                 <Text style={{margin: 20, color: '#6D83A9', fontSize: 20}}>
-                    Gender Match?
+                    I would prefer my mentor to be the same gender as me
+
+                    
                 </Text>
 
-                <Text style={{margin: 20, color: '#6D83A9', fontSize: 15}}>
-                    I would prefer my mentor to be the same gender as me
-                </Text>
+                <TouchableOpacity style={styles.checkboxContainer} onPress={handleCheckboxPress}>
+                    
+                    {isChecked ? (<Icon name="check-square" size={24} color="#000"/>) : (<Icon name="square-o" size={24} color="#000"/>)}
+        
+                    
+                </TouchableOpacity>
+                
             </View>
 
-            <TouchableOpacity style={styles.container} onPress={onChange}>
-                <Icon name={checked ? 'check-square-o' : 'square-o'} size={24} color="#000" />
-                <Text style={styles.label}>{label}</Text>
-            </TouchableOpacity>
+            
           
         </View>
         
@@ -61,9 +73,7 @@ export default function Resource(props) {
                     // style={{ backgroundColor: '#FF9900', color:'#6D83A9', borderRadius:'15',backgroundColor:'#EDE5EC'}} 
                     color='#6D83A9'
                     backgroundColor='#EDE5EC'
-                    onPress={() => {
-            props.navigation.navigate('Resource');
-            }}
+                    // onPress={() => {props.navigation.navigate('Rating');}}
             />
         </View>
     </View>
@@ -87,6 +97,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
+  checkboxContainer: {
+    borderColor: '#DACFE0',
+    alignItems: "center",
+  },
+
   inputContainer: {
     flexDirection: "row",
     alignItems: 'center',
@@ -104,6 +119,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     textAlign: 'left',
     alignSelf: 'stretch',
+  },
+
+  textLabel: {
+    fontSize: 15,
+    width: 10,
+    height: 10,
+    borderRadius : 20,
+    borderColor: '#DACFE0',
+    borderWidth: 5,
+    margin : 20,
+    paddingHorizontal: 10,
+    textAlign: 'right',
+    
   },
 
   inputLabel: {
