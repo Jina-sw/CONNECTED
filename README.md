@@ -7,7 +7,7 @@ Created by Crystal Zhao, Jina Pak, Puja Shah, Qirra Qadri
 
 
 ### What it does
-"Connected" is an app that aims to assist users by providing resources for various struggles, facilitating connections with mentors who share similar experiences, and guiding users to helplines in case of urgent help.
+"Connected" is an mobile app that aims to assist users by providing resources for various struggles, facilitating connections with mentors who share similar experiences, and guiding users to helplines in case of urgent help.
 
 ### How we built it
 React Native, Expo, JavaScript, C++
