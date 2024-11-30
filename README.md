@@ -2,6 +2,10 @@
 
 Created by Crystal Zhao, Jina Pak, Puja Shah, Qirra Qadri
 
+## Project Overview
+<img width="715" alt="image" src="https://github.com/user-attachments/assets/c3dcf061-fc88-40c0-9610-bda7d8d05c3b">
+
+
 ### What it does
 "Connected" is an app that aims to assist users by providing resources for various struggles, facilitating connections with mentors who share similar experiences, and guiding users to helplines in case of urgent help.
 
