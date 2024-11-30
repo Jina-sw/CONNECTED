@@ -1,5 +1,5 @@
 # Connected
-🥈2nd Place Winning Project🥈 at DEEDHacks 2023, SFU (12-hour hackathon)
+🥈2nd Place Winning Project🥈 at DEEDHacks 2023, @SFU (12-hour hackathon)
 Created by Crystal Zhao, Jina Pak, Puja Shah, Qirra Qadri
 
 ## Project Overview
