@@ -1,5 +1,5 @@
 # Connected
-
+🥈2nd Place Winning Project🥈 at DEEDHacks 2023, SFU (12-hour hackathon)
 Created by Crystal Zhao, Jina Pak, Puja Shah, Qirra Qadri
 
 ## Project Overview
@@ -12,6 +12,18 @@ Created by Crystal Zhao, Jina Pak, Puja Shah, Qirra Qadri
 ### How we built it
 React Native, Expo, JavaScript, C++
 
+### Accomplishment we are proud of
+Our passion for helping others was effectively delivered in this mobile app. The message and purpose we wanted to implement were created in all features this app has.
+
+### Challenges we ran into
+- The stacks we chose to work on weren't compatible with the laptops that one of the main front-end developer teammates owns. We debugged for hours and asked mentors for help but nobody was able to figure out what was wrong. Therefore, we had to take turns to use the "working" laptop.
+- 12-hour limit, This 12-hour duration is not long at all!!
+
+### Future Improvement
+- Deploy
+- Change Stacks for Back-End
+- Back-end development
+  
 ### Link to Devpost:
 https://devpost.com/software/connected-lita75?ref_content=user-portfolio&ref_feature=in_progress
 
